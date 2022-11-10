@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="header">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/96e0fede2d.js" crossorigin="anonymous"></script>
+<style>
+a{text-decoration: none; color:black;}
+button{border:none; background-color: #ec1f2f}
+</style>
+</head>
+<body>
+	<div class="header_wrap">
+		<div class="login">
+			<a href="#">로그인</a>
+			<a href="#">회원가입</a>
+			<a href="#">남양<font color="red">i</font><i class="fa-solid fa-circle-chevron-right"></i></a>
+			<a href="#">케어비몰 <i class="fa-solid fa-circle-chevron-right"></i></a>
+		</div>
+		<div class="categoty">
+			<button class="category_btn"><img src="../img/main/ico_btn_category.png" alt="" /></button>
+		</div>
+	</div>
+</body>
+</th:block>
+</html>

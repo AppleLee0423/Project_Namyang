@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- 뷰포트 설정 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 파비콘 설정 -->
+<link rel="icon" href="../img/main/favicon.png" />
+<!-- font Awesome 설정 -->
+<script src="https://kit.fontawesome.com/96e0fede2d.js" crossorigin="anonymous"></script>
+<title>남양몰</title>
+<style>
+*{ margin:0; padding:0;}
+.close_today{border:none; background-color: transparent; cursor: pointer;}
+</style>
+</head>
+<body>
+	<div class="container">
+		<!-- 탑배너 설정 -->
+		<div class="top_banner" style="background: rgb(255, 208, 215); display: block; text-align: center;">
+			<a href="#"><img src="../img/main/top_banner.png" th:align="center"/></a>
+			<button class="close_today" >
+			<span>오늘 보지않기</span>
+			<font size="5" color="gray"><i class="fa-sharp fa-solid fa-xmark"></i></font>
+			</button>
+		</div>
+		<!-- Header -->
+		<div class="header" th:replace="layout/header :: header"></div>
+		
+		<!-- Content -->
+		<div class="contents">
+		내용입니다.
+		</div>
+		
+		<!-- Footer -->
+		<div class="footer" th:replace="layout/footer :: footer"></div>
+		
+	</div>
+</body>
+</html>

@@ -9,5 +9,4 @@ public class ProjectNamyangApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectNamyangApplication.class, args);
 	}
-
 }
